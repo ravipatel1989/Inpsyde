@@ -36,6 +36,9 @@
 				type:"POST",
 				url: ajax_var.url,
 				data:{action:"get_user_by_ajax",nonce: ajax_var.nonce,"user_id":userid},
+				beforeSend:function(){
+					$("#overlay").fadeIn(300);
+				},
 				success:function(response){
 					if(undefined != response){
 						let userdata = JSON.parse(response);
@@ -58,6 +61,9 @@
 				complete:function(response){
 					$('.userList').hide();
 					$('.userDetails').show();
+					setTimeout(function(){
+						$("#overlay").fadeOut(300);
+					  },500);
 				}
 			})
 		});

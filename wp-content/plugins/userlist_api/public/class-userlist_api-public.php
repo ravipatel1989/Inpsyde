@@ -117,9 +117,19 @@ class Userlist_api_Public {
 		return apply_filters( 'my_lovely_users_table_filter', $template );
 	}
 
-	function link_to_header_function() {
+	public function link_to_header_function() {
 		?>
 			<a class="btn btn-primary" href="<?php echo home_url('my-lovely-users-table');?>">My lovely users</a>
+		<?php
+	}
+
+	public function add_loader_to_footer(){
+		?>
+		<div id="overlay">
+			<div class="cv-spinner">
+				<span class="spinner"></span>
+			</div>
+		</div>
 		<?php
 	}
 	

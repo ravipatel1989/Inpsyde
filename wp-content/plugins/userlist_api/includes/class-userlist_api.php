@@ -179,6 +179,7 @@ class Userlist_api {
 		$this->loader->add_action( 'template_include', $plugin_public, 'template_include_my_lovely_users_table' );
 		$this->loader->add_filter( 'document_title_parts', $plugin_public, 'my_lovely_users_table_title' );
 		$this->loader->add_action( 'wp_head', $plugin_public, 'link_to_header_function' );
+		$this->loader->add_action( 'wp_footer', $plugin_public, 'add_loader_to_footer' );
 
 	}
 
