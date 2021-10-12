@@ -1,0 +1,21 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .userDetails{
+     display: none;
+ }
+ .userDetails p{
+     margin:0 !important;
+     padding: 0;
+ }
+ .backtolist{
+     display: block;
+     width: 100%;
+ }
+ .innerlist{
+     text-align: right;
+ }
+ #userList tr{
+     cursor: pointer;
+ }
