@@ -3,10 +3,8 @@
 /**
  * The plugin bootstrap file
  *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
+ * This is a user list plugin. Which use third party user list api for user listing
+ * And clicking on any user record it will show the details of the record.
  *
  * @link              www.technocratic.biz
  * @since             1.0.0
