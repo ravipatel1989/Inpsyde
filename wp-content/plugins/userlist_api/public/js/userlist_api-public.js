@@ -41,21 +41,8 @@
 				},
 				success:function(response){
 					if(undefined != response){
-						let userdata = JSON.parse(response);
-						$('.userDetails #name').text('Name: '+userdata.name);
-						$('.userDetails #username').text('Username: '+userdata.username);
-						$('.userDetails #email').text('Email: '+userdata.email);
-						$('.userDetails #street').text('Street: '+userdata.address.street);
-						$('.userDetails #suite').text('Suite: '+userdata.address.suite);
-						$('.userDetails #city').text(userdata.address.city);
-						$('.userDetails #lat').text(userdata.address.geo.lat);
-						$('.userDetails #long').text(userdata.address.geo.lat);
-						$('.userDetails #phone').text('Phone: '+userdata.phone);
-						$('.userDetails #website').text('Website: '+userdata.website);
-						$('.userDetails #cname').text('Company Name: '+userdata.company.name);
-						$('.userDetails #bs').text('Bs: '+userdata.company.bs);
-						$('.userDetails #catchPhrase').text('Catch Phase: '+userdata.company.bs);
-						
+						console.log(response);
+						$('.resuserdata').html(response);
 					}
 				},
 				complete:function(response){

@@ -49,29 +49,9 @@ $body = wp_remote_retrieve_body( $request );
                         <button class="userdata" data-id="0">Back</button>
                     </div>
                 </div>
-                
-                <p id="name"></p>
-                <p id="username"></p>
-                <p id="email"></p>
-                <div class="address">
-                    <p id="street"></p>
-                    <p id="suite"></p>
-                    <p id="city"></p>
-                    <p id="zip"></p>
-                    <p id="geolocation">
-                        <label>Latitude:<span id="lat"></span></label>
-                    </p>
-                    <p>
-                        <label>Longitude:<span id="long"></span></label>
-                    </p>
-                </div>
-                <p id="phone"></p>
-                <p id="website"></p>
-                <div class="company">
-                    <p id="cname"></p>
-                    <p id="catchPhrase"></p>
-                    <p id="bs"></p>
-                </div>
+                <div class="resuserdata">
+
+                </div>                
             </div>
         </div>
     </div>
